@@ -1,0 +1,13 @@
+{
+  "case_id": "CASE001",
+  "active_annotation": {
+    "segments": [
+      {
+        "level": "Level-2",
+        "label": "fissure",
+        "start_sec": 120.0,
+        "end_sec": 300.0
+      }
+    ]
+  }
+}

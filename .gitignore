@@ -1,0 +1,53 @@
+# Clinical data and derived files
+data/
+raw/
+videos/
+images/
+frames/
+annotations/
+metadata/
+outputs/
+work_dirs/
+checkpoints/
+models/
+
+# Media files
+*.mp4
+*.mov
+*.avi
+*.m2ts
+*.wmv
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+
+# Spreadsheets and patient/case metadata
+*.xlsx
+*.xls
+*patient*
+*metadata*
+*case_metrics_with_outcomes.csv*
+*frame_level_predictions.csv*
+*predictions*.csv
+
+# Model and prediction artifacts
+*.pth
+*.pt
+*.pkl
+*.onnx
+*.ckpt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

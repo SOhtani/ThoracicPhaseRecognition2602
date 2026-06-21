@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+opencv-python
+Pillow
+PyYAML
+# Install mmpretrain/mmengine/mmcv according to the CUDA and PyTorch versions of your environment.

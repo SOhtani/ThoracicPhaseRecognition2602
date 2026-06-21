@@ -1,0 +1,17 @@
+name: thoracic-phase-recognition-2602
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pillow
+  - pyyaml
+  - pip
+  - pip:
+      - opencv-python
+      # Install mmpretrain/mmengine/mmcv separately according to your CUDA/PyTorch environment.

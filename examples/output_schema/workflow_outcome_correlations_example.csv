@@ -1,0 +1,5 @@
+metric,outcome,n,spearman_rho,p_value
+pred_transition_count,operative_time_min,61,0.735,0.000000000016
+true_transition_count,operative_time_min,61,0.562,0.0000024
+pred_fraction_uncertain,operative_time_min,61,0.358,0.0047
+true_fraction_uncertain,operative_time_min,61,0.257,0.046
