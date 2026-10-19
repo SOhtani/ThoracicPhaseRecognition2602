@@ -1,13 +1,20 @@
 # configs/swin_small_rect.py
 # 汎用（Swin-S, 長辺横, 224x448 などの長方形）
+import os
+
 _base_ = []
 
 # ===== 外部から --cfg-options で上書き可能な変数 =====
-DATA_ROOT = r"C:/Users/SOhtani2024/SurgCap/surgcap-project/data/images"   # run_all_levels.py から注入
+# DATA_ROOT / PRETRAINED はローカル環境固有のパスなので、環境変数で渡す
+# （未設定時はプレースホルダ。run_all_levels.py から --cfg-options で注入も可能）
+DATA_ROOT = os.environ.get("DATA_ROOT", "/path/to/data/images")
 NUM_CLASSES = 2
 IMG_H = 224
 IMG_W = 448
-PRETRAINED = r"C:/Users/SOhtani2024/.cache/torch/hub/checkpoints/swin_small_224_b16x64_300e_imagenet_20210615_110219-7f9d988b.pth"
+PRETRAINED = os.environ.get(
+    "PRETRAINED",
+    "/path/to/pretrained/swin_small_224_b16x64_300e_imagenet_20210615_110219-7f9d988b.pth",
+)
 
 # ===== モデル =====
 model = dict(
